@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TicTak Feed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      overflow-y: scroll;
+    }
+
+    .feed {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .post {
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 30px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .post img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+
+    .actions button {
+      background: none;
+      border: none;
+      color: #8ab4f8;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .actions button:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="feed">
+    <div class="post">
+      <img src="https://via.placeholder.com/500x300?text=INVINCIBLE+Edit" alt="Post 1">
+      <div class="caption">Cumbia Mark edit #viral #edit #fyp #invincible #mark</div>
+      <div class="actions">
+        <button onclick="alert('Liked')">❤️</button>
+        <button onclick="alert('Commented')">💬</button>
+        <button onclick="alert('Shared')">🔁</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://via.placeholder.com/500x300?text=YT+Comments+Part+45" alt="Post 2">
+      <div class="caption">YT Shorts comments be like part 45 #comments #funny #ytshorts #socialmediacomments
+      <div class="actions">
+        <button onclick="alert('Liked')">❤️</button>
+        <button onclick="alert('Commented')">💬</button>
+        <button onclick="alert('Shared')">🔁</button>
+      </div>
+    </div>
+
+    <!-- Add more posts here -->
+  </div>
+</body>
+</html>
